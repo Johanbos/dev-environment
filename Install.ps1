@@ -12,7 +12,7 @@
 Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
 choco upgrade lessmsi -y
 
-# Google drive
+# Cloud files
 choco upgrade googledrive
 
 # passwords
@@ -42,6 +42,7 @@ choco upgrade slack -y
 choco upgrade treesizefree -y
 choco upgrade procexp -y
 choco upgrade 7zip -y
+choco upgrade paint.net -y
 
 # update everything! :-)
 choco upgrade all -y
