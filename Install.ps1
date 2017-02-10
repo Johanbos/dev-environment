@@ -34,7 +34,7 @@ choco upgrade docker-for-windows -y
 choco upgrade docker -y
 
 # dba
-choco install sql-server-management-studio -y
+choco upgrade sql-server-management-studio -y
 
 # tools
 choco upgrade greenshot -y
