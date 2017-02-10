@@ -31,13 +31,13 @@ choco upgrade firefox -y
 choco upgrade visualstudiocode -y
 choco upgrade visualstudio2015community -y
 choco upgrade docker-for-windows -y
+choco upgrade docker -y
 
 # dba
-choco upgrade -y
+choco install sql-server-management-studio -y
 
 # tools
 choco upgrade greenshot -y
-choco upgrade slack -y
 choco upgrade slack -y
 choco upgrade treesizefree -y
 choco upgrade procexp -y
