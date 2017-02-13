@@ -30,8 +30,8 @@ choco upgrade firefox -y
 # coding
 choco upgrade visualstudiocode -y
 choco upgrade visualstudio2015community -y
-choco upgrade docker-for-windows -y
-choco upgrade docker -y
+#choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
+#choco upgrade docker -y #didnt work, because it only would run windows-containers
 
 # dba
 choco upgrade sql-server-management-studio -y
