@@ -27,9 +27,13 @@ choco upgrade sourcetree -y
 choco upgrade googlechrome -y
 choco upgrade firefox -y
 
+#architecture
+choco upgrade archi -y
+
 # coding
 choco upgrade visualstudiocode -y
 choco upgrade visualstudio2015community -y
+choco upgrade linqpad5 -y
 #choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
 #choco upgrade docker -y #didnt work, because it only would run windows-containers
 
