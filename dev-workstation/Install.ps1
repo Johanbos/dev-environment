@@ -1,3 +1,4 @@
+Set-ExecutionPolicy Unrestricted
 # run lines seperate!
 
 # Install a Windows 10 Home of Prof
