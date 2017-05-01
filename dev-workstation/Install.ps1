@@ -48,6 +48,7 @@ choco upgrade treesizefree -y
 choco upgrade procexp -y
 choco upgrade 7zip -y
 choco upgrade paint.net -y
+choco upgrade notepadplusplus -y
 
 # update everything! :-)
 choco upgrade all -y
