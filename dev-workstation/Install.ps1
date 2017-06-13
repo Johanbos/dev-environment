@@ -31,12 +31,14 @@ choco upgrade firefox -y
 #architecture
 choco upgrade archi -y
 
-# coding
+#coding
 choco upgrade visualstudiocode -y
 choco upgrade visualstudio2015community -y
 choco upgrade linqpad5 -y
 #choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
 #choco upgrade docker -y #didnt work, because it only would run windows-containers
+choco upgrade nodejs
+choco upgrade ruby
 
 # dba
 choco upgrade sql-server-management-studio -y
