@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add a mvc project html checkbox (complaint variant)</Title>
+      <Author>Johan Bos</Author>
+      <Shortcut>cbc</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="HTML">
+        <![CDATA[<label class="checkbox" onclick="">
+  <input type="checkbox" id="@ComplaintDataModelBinder.$BindingName$" name="@ComplaintDataModelBinder.$BindingName$" @if(Model.ComplaintData. ?? false) { <text>checked="checked"</text>  } value="true" />
+  <span>@T("Complaint-$BindingName$", "$BindingName$", "$BindingName$")</span>
+</label>
+<input type="hidden" name="@ComplaintDataModelBinder.$BindingName$" value="" />]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>BindingName</ID>
+          <ToolTip>Replace Binder property (bool?).</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
+
