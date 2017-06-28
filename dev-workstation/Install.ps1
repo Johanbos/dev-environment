@@ -51,6 +51,7 @@ choco upgrade procexp -y
 choco upgrade 7zip -y
 choco upgrade paint.net -y
 choco upgrade notepadplusplus -y
+choco upgrade winmerge -y
 
 # update everything! :-)
 choco upgrade all -y
