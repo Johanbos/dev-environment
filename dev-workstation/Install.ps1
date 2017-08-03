@@ -7,7 +7,10 @@ Set-ExecutionPolicy Unrestricted
 
 # Add to domain (ask domain admin)
 
-# Install all updates!!!
+# Install outlook
+# S:\Applic\Office\Office2007-Std-NL\Desktop.bat
+
+# Install all Windows Updates
 
 # packagemanager
 Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
@@ -32,8 +35,8 @@ choco upgrade firefox -y
 choco upgrade archi -y
 
 #coding
+choco upgrade visualstudio2017community -y
 choco upgrade visualstudiocode -y
-choco upgrade visualstudio2015community -y
 choco upgrade linqpad5 -y
 #choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
 #choco upgrade docker -y #didnt work, because it only would run windows-containers
