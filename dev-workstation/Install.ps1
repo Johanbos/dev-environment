@@ -1,23 +1,15 @@
+$ErrorActionPreference = "stop";
+clear-host;
+write-host "Powershell version: " $PSVersionTable.PSVersion
 Set-ExecutionPolicy Unrestricted
-# run lines seperate!
 
-# Install a Windows 10 Home of Prof
-
-# Split drive to get a C with 100GB+ and D with 40GB+ (computer Management > Disk management)
-
-# Add to domain (ask domain admin)
-
-# Install outlook
+# Install outlook manually
 # S:\Applic\Office\Office2007-Std-NL\Desktop.bat
 
-# Install all Windows Updates
-
-# packagemanager
-Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
 choco upgrade lessmsi -y
 
 # Cloud files
-choco upgrade googledrive
+choco upgrade googledrive -y
 
 # passwords
 choco upgrade keepass -y
@@ -40,8 +32,8 @@ choco upgrade visualstudiocode -y
 choco upgrade linqpad5 -y
 #choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
 #choco upgrade docker -y #didnt work, because it only would run windows-containers
-choco upgrade nodejs
-choco upgrade ruby
+choco upgrade nodejs -y
+#choco upgrade ruby #newest ruby needs to be supprtoed by team
 
 # dba
 choco upgrade sql-server-management-studio -y
@@ -55,6 +47,4 @@ choco upgrade 7zip -y
 choco upgrade paint.net -y
 choco upgrade notepadplusplus -y
 choco upgrade winmerge -y
-
-# update everything! :-)
-choco upgrade all -y
+choco upgrade vncviewer -y
