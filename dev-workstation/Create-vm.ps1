@@ -31,3 +31,10 @@ Start-VM $name
 vmconnect.exe localhost $name | Out-Null
 Stop-VM $name
 Remove-VM $name -Confirm
+
+# Install a Windows 10 Home of Prof
+
+# Split drive to get a C with 100GB+ and D with 40GB+ (computer Management > Disk management)
+
+# Add to domain (ask domain admin)
+

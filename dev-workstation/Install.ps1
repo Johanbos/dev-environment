@@ -27,6 +27,7 @@ choco upgrade firefox -y
 choco upgrade archi -y
 
 #coding
+choco upgrade dotnetcore-sdk -y
 choco upgrade visualstudio2017community -y
 choco upgrade visualstudiocode -y
 choco upgrade linqpad5 -y
@@ -48,3 +49,4 @@ choco upgrade paint.net -y
 choco upgrade notepadplusplus -y
 choco upgrade winmerge -y
 choco upgrade vncviewer -y
+choco upgrade postman -y
