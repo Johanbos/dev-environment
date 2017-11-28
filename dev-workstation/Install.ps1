@@ -50,3 +50,4 @@ choco upgrade notepadplusplus -y
 choco upgrade winmerge -y
 choco upgrade vncviewer -y
 choco upgrade postman -y
+choco upgrade azure-cli -y
