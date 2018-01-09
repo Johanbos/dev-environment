@@ -1,19 +1,24 @@
 $ErrorActionPreference = "stop";
 clear-host;
 write-host "Powershell version: " $PSVersionTable.PSVersion
+
+If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
+{   
+	$arguments = "& '" + $myinvocation.mycommand.definition + "'"
+	Start-Process powershell -Verb runAs -ArgumentList $arguments
+	Break
+}
+
+# allow our own powershell scripts
 Set-ExecutionPolicy Unrestricted
 
-# Install outlook manually
+# Install outlook manually or from office.com
 # S:\Applic\Office\Office2007-Std-NL\Desktop.bat
 
 choco upgrade lessmsi -y
 
-# Cloud files
-choco upgrade googledrive -y
-
 # passwords
 choco upgrade keepass -y
-choco upgrade keepass-keepasshttp -y
 
 # source control
 choco upgrade git -y
@@ -34,7 +39,7 @@ choco upgrade linqpad5 -y
 #choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
 #choco upgrade docker -y #didnt work, because it only would run windows-containers
 choco upgrade nodejs -y
-#choco upgrade ruby #newest ruby needs to be supprtoed by team
+#choco upgrade ruby #newest ruby needs to be supported by team
 
 # dba
 choco upgrade sql-server-management-studio -y
