@@ -33,6 +33,8 @@ choco upgrade archi -y
 
 #coding
 choco upgrade dotnetcore-sdk -y
+choco upgrade dotnetcore-runtime -y
+choco upgrade dotnetcore-windowshosting -y
 choco upgrade visualstudio2017community -y
 choco upgrade visualstudiocode -y
 choco upgrade linqpad5 -y
