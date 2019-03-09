@@ -12,13 +12,9 @@ If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 # allow our own powershell scripts
 Set-ExecutionPolicy Unrestricted
 
-# Install outlook manually or from office.com
-# S:\Applic\Office\Office2007-Std-NL\Desktop.bat
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco upgrade lessmsi -y
-
-# passwords
-choco upgrade keepass -y
 
 # source control
 choco upgrade git -y
@@ -36,12 +32,10 @@ choco upgrade dotnetcore-sdk -y
 choco upgrade dotnetcore-runtime -y
 choco upgrade dotnetcore-windowshosting -y
 choco upgrade visualstudio2017community -y
-choco upgrade visualstudiocode -y
+choco upgrade vscode -y
 choco upgrade linqpad5 -y
-#choco upgrade docker-for-windows -y #didnt work, because it only would run windows-containers
-#choco upgrade docker -y #didnt work, because it only would run windows-containers
+choco upgrade docker-desktop -y
 choco upgrade nodejs -y
-#choco upgrade ruby #newest ruby needs to be supported by team
 
 # dba
 choco upgrade sql-server-management-studio -y
@@ -53,7 +47,6 @@ choco upgrade treesizefree -y
 choco upgrade procexp -y
 choco upgrade 7zip -y
 choco upgrade paint.net -y
-choco upgrade notepadplusplus -y
 choco upgrade winmerge -y
 choco upgrade vncviewer -y
 choco upgrade postman -y
