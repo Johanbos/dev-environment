@@ -35,6 +35,7 @@ choco upgrade visualstudio2017community -y
 choco upgrade vscode -y
 choco upgrade linqpad5 -y
 choco upgrade docker-desktop -y
+choco upgrade docker-cli -y
 choco upgrade nodejs -y
 
 # dba
