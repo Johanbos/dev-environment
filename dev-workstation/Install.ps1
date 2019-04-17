@@ -2,11 +2,10 @@ $ErrorActionPreference = "stop";
 clear-host;
 write-host "Powershell version: " $PSVersionTable.PSVersion
 
-If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
-{   
-	$arguments = "& '" + $myinvocation.mycommand.definition + "'"
-	Start-Process powershell -Verb runAs -ArgumentList $arguments
-	Break
+If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {   
+    $arguments = "& '" + $myinvocation.mycommand.definition + "'"
+    Start-Process powershell -Verb runAs -ArgumentList $arguments
+    Break
 }
 
 # allow our own powershell scripts
@@ -52,3 +51,4 @@ choco upgrade winmerge -y
 choco upgrade vncviewer -y
 choco upgrade postman -y
 choco upgrade azure-cli -y
+choco upgrade 1password -y
