@@ -35,7 +35,7 @@ choco upgrade vscode -y
 choco upgrade linqpad5 -y
 choco upgrade docker-desktop -y
 choco upgrade docker-cli -y
-choco upgrade nodejs -y
+choco upgrade nvm -y
 
 # dba
 choco upgrade sql-server-management-studio -y
