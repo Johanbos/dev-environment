@@ -30,7 +30,7 @@ choco upgrade archi -y
 choco upgrade dotnetcore-sdk -y
 choco upgrade dotnetcore-runtime -y
 choco upgrade dotnetcore-windowshosting -y
-choco upgrade visualstudio2017community -y
+choco upgrade visualstudio2019community -y
 choco upgrade vscode -y
 choco upgrade linqpad5 -y
 choco upgrade docker-desktop -y
