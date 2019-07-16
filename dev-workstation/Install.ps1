@@ -38,7 +38,7 @@ choco upgrade docker-cli -y
 choco upgrade nvm -y
 
 # dba
-choco upgrade sql-server-management-studio -y
+choco upgrade azure-data-studio -y
 
 # tools
 choco upgrade greenshot -y
@@ -47,8 +47,6 @@ choco upgrade treesizefree -y
 choco upgrade procexp -y
 choco upgrade 7zip -y
 choco upgrade paint.net -y
-choco upgrade winmerge -y
-choco upgrade vncviewer -y
 choco upgrade postman -y
 choco upgrade azure-cli -y
 choco upgrade 1password -y
