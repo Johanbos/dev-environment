@@ -17,20 +17,16 @@ choco upgrade lessmsi -y
 
 # source control
 choco upgrade git -y
-choco upgrade sourcetree -y
 
 # Browsers
 choco upgrade googlechrome -y
 choco upgrade firefox -y
 
-#architecture
-choco upgrade archi -y
-
 #coding
 choco upgrade dotnetcore-sdk -y
 choco upgrade dotnetcore-runtime -y
 choco upgrade dotnetcore-windowshosting -y
-choco upgrade visualstudio2019community -y
+choco upgrade visualstudio2022community -y
 choco upgrade vscode -y
 choco upgrade linqpad5 -y
 choco upgrade docker-desktop -y
@@ -41,10 +37,7 @@ choco upgrade nvm -y
 choco upgrade azure-data-studio -y
 
 # tools
-choco upgrade greenshot -y
-choco upgrade slack -y
 choco upgrade treesizefree -y
-choco upgrade procexp -y
 choco upgrade 7zip -y
 choco upgrade paint.net -y
 choco upgrade postman -y
